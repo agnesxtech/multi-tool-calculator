@@ -1,0 +1,97 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+}
+
+:root {
+  --bg: #fff;
+  --text: #000;
+}
+
+body.dark {
+  --bg: #121212;
+  --text: #f1f1f1;
+}
+
+#controls {
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#mainBox {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background: var(--box-bg, #ffffff);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: background 0.3s ease-in-out;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
+}
+
+.tab-content {
+  display: block;
+}
+
+.tab-content.hidden {
+  display: none;
+}
+
+.buttons button,
+.tabs button,
+#controls select,
+#controls input,
+.tab-content button {
+  margin: 5px;
+  padding: 10px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="text"], input[type="number"] {
+  width: calc(100% - 20px);
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#historyList {
+  list-style: none;
+  padding-left: 0;
+}
+
+
+body.green {
+  --bg: #defde0;
+  --input-bg: #ffffff;
+  --button-bg: #c0f5c2;
+  --button-hover: #a8e9ad;
+  --text: #113311;
+}
+
+body.purple {
+  --bg: #f3e8ff;
+  --input-bg: #ffffff;
+  --button-bg: #d7bfff;
+  --button-hover: #caa3fc;
+  --text: #2e104f;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+}
